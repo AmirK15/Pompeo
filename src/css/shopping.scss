@@ -1,0 +1,24 @@
+.shopping {
+  padding: 120px 0;
+  &__title {
+    @include text($poppins, 700, 36px, 46px, $black);
+    margin: 7px 0 13px;
+  }
+  &__desc {
+    color: #AC1313;
+    position: relative;
+    //text-decoration: underline;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background: #AC1313;
+      bottom: 0.5px;
+    }
+  }
+  .description {
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+}

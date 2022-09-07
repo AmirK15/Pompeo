@@ -1,0 +1,16 @@
+.btn {
+    background: #AC1313;
+    @include text($poppins, 700, 12px, 22px, #fff);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 2px solid #AC1313;
+    padding: 18px 23px 18px 38px;
+    transition: .3s;
+    &:hover {
+        border: 2px solid #AC1313;
+        color: #AC1313;
+        background: transparent;
+        font-weight: 700;
+    }
+}
+

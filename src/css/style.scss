@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Libre+Franklin:wght@400;700&family=Pacifico&family=Playfair+Display&family=Poppins:wght@400;700&display=swap');
+
+$poppins: 'Poppins', sans-serif;
+$lato: 'Lato', sans-serif;
+$pacifico: 'Pacifico', sans-serif;
+$franklin: 'Libre Franklin', sans-serif;
+$display: 'Playfair Display', sans-serif;
+
+$red: #D77474;
+$grey: #6C6C6C;
+$black: #000;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+@mixin text($ff, $fw, $fz, $lh, $c) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  color: $c;
+}
+
+.logo {
+  @include text($pacifico, 400, 33px, 40px, $black);
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.subtitle {
+  @include text($poppins, 700, 14px, 24px, $red);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.subtitle_size {
+  font-weight: 400;
+}
+
+.title {
+  @include text($poppins, 700, 40px, 50px, $black)
+}
+
+.ampersand {
+  @include text($display, 400, 68px, 68px, #AC1313)
+}
+
+.description {
+  @include text($franklin, 400, 14px, 24px, $grey);
+  &_size {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.message {
+  @include text($poppins, 400, 18px, 34px, #DBDBDB);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 50%;
+  left: -60px;
+}
+
+.message-right {
+  @include text($poppins, 400, 18px, 34px, #DBDBDB);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 50%;
+  right: -60px;
+}
+
+@import "btn";
+@import "header";
+@import "home";
+@import "categories";
+@import "info";
+@import "shopping";
+@import "store";
+@import "news";
+@import "footer";

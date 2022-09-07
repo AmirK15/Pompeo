@@ -1,0 +1,19 @@
+.home {
+  &::before {
+    content: url("../images/home/homeDecor.png");
+    position: absolute;
+    top: 128px;
+    right: 33px;
+  }
+  padding: 192px 0 211px;
+  background: url("../images/home/homeBg.webp") center/cover no-repeat;
+  position: relative;
+  &__title {
+    @include text($poppins, 700, 48px, 58px, $black);
+    margin: 12px 0 14px;
+  }
+  .btn {
+    margin-top: 51px;
+  }
+}
+

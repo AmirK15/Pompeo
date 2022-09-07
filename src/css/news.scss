@@ -1,0 +1,44 @@
+.news {
+  padding: 122px 0 162px;
+  text-align: center;
+  .subtitle {
+    margin: 40px 0 8px;
+  }
+  .title {
+    font-weight: 400;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-email {
+      display: flex;
+      column-gap: 8px;
+      margin: 63px 0 42px;
+    }
+    &-input {
+      @include text($lato, 400, 14px, 20px, #A1A1A1);
+      border: 1px solid #EBEBEB;
+      width: 320px;
+      height: 45px;
+      padding-left: 40px;
+      &::placeholder {
+        @include text($lato, 400, 14px, 20px, #A1A1A1);
+      }
+    }
+    &-btn {
+      background: $black;
+      border: none;
+      @include text($lato, 400, 14px, 20px, #fff);
+      width: 175px;
+      height: 45px;
+      cursor: pointer;
+    }
+    &-check {
+      @include text($lato, 400, 14px, 20px, #A1A1A1);
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+    }
+  }
+}

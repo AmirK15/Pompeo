@@ -1,0 +1,35 @@
+.header {
+  padding: 25px 0;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__right {
+    display: flex;
+    column-gap: 19px;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    column-gap: 40px;
+  }
+  &__link {
+    @include text($poppins, 400, 12px, 22px, $grey);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all .5s;
+    &:hover {
+      color: #AC1313;
+    }
+  }
+  &__btn {
+    padding: 9px 0 9px 15px;
+    background: transparent;
+    border: none;
+    border-left: 1px solid #EBEBEB;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    cursor: pointer;
+  }
+}
